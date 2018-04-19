@@ -52,14 +52,12 @@ db.orders.find().sort({order_date:+1}).limit(1)
 
 ### Question 4 : Migration SQL vers Mongodb. Convertir en commande MONGODB les instructions SQL suivantes
 
-- DELETE FROM CUST_CALLS WHERE customer_num = 121  
-```
+- DELETE FROM CUST_CALLS WHERE customer_num = 121; 
+- SELECT COUNT(*) FROM CUST_CALLS;
+- UPDATE FROM CUSTOMER SET FNAME = "Laurent" AND LNAME = "Revel" WHERE CUSTOMER_NUM = 101;
+
+```sql
 db.cust_calls.deleteMany({customer_num: '121'])
-```
-- SELECT COUNT(*) FROM CUST_CALLS  
-```
 db.cust_calls.count()
-```
-- UPDATE FROM CUSTOMER SET FNAME = « Laurent » AND LNAME = « Revel » WHERE CUSTOMER_NUM = 101  
-```
 db.customer.update({customer_num: '121'}, {$set: { "fname": "Laurent" }, "lname": {"Revel"}})
+```
