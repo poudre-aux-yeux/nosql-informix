@@ -57,7 +57,7 @@ db.orders.find().sort({order_date:+1}).limit(1)
 - UPDATE FROM CUSTOMER SET FNAME = "Laurent" AND LNAME = "Revel" WHERE CUSTOMER_NUM = 101;
 
 ```sql
-db.cust_calls.deleteMany({customer_num: '121'])
+db.cust_calls.deleteMany({customer_num: '121'})
 db.cust_calls.count()
 db.customer.update({customer_num: '101'}, {$set: { "fname": "Laurent" }, {"lname": "Revel"}})
 ```
