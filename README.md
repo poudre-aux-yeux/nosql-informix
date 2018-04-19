@@ -46,7 +46,7 @@ mongoimport --db stores_demo --collection orders < orders.json
 3. cust_calls : dont user_id like ‘%j’
 4. orders : le 1e enregistrement en triant par order_date (par ordre croissant)
 
-```sql
+```js
 db.customer.find( {customer_num: { $gt:101 } } )
 db.orders.find( {order_num: { $gte:1003, $lte:1006 } } )
 db.cust_calls.find({"user_id": /j$/})
@@ -59,7 +59,7 @@ db.orders.find().sort({order_date:+1}).limit(1)
 2. Unique sur les colonnes : customer_num + call_dtime + user_id de la collection cust_calls
 3. Vérifier que votre index est bien utilisé dans l’instruction 2a puis 2c
 
-```sql
+```js
 db.customer.createIndex({ "customer_num": 1 })
 db.customer.createIndex({ "customer_num": 1, "call_dtime": 1, "user_id": 1 })
 db.customer.explain().find({customer_num: {$gt: 101}})
@@ -72,7 +72,7 @@ db.cust_calls.explain().find({user_id: /j$/})
 2. SELECT COUNT(*) FROM CUST_CALLS;
 3. UPDATE FROM CUSTOMER SET FNAME = "Laurent" AND LNAME = "Revel" WHERE CUSTOMER_NUM = 101;
 
-```sql
+```js
 db.cust_calls.deleteMany({customer_num: 121})
 db.cust_calls.count()
 db.customer.update({customer_num: 101}, {$set: { "fname": "Laurent" , "lname": "Revel"}})
