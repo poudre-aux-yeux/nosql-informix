@@ -1,0 +1,28 @@
+{customer_num:101,fname:"Ludwig",lname:"Pauli",company:"All Sports Supplies",address1:"213 Erstwild Court",city:"Sunnyvale",state:"CA",zipcode:"94086",phone:"408-789-8075"}
+{customer_num:102,fname:"Carole",lname:"Sadler",company:"Sports Spot",address1:"785 Geary St",city:"San Francisco",state:"CA",zipcode:"94117",phone:"415-822-1289"}
+{customer_num:103,fname:"Philip",lname:"Currie",company:"Phil's Sports",address1:"654 Poplar",address2:"P. O. Box 3498",city:"Palo Alto",state:"CA",zipcode:"94303",phone:"415-328-4543"}
+{customer_num:104,fname:"Anthony",lname:"Higgins",company:"Play Ball!",address1:"East Shopping Cntr.",address2:"422 Bay Road",city:"Redwood City",state:"CA",zipcode:"94026",phone:"415-368-1100"}
+{customer_num:105,fname:"Raymond",lname:"Vector",company:"Los Altos Sports",address1:"1899 La Loma Drive",city:"Los Altos",state:"CA",zipcode:"94022",phone:"415-776-3249"}
+{customer_num:106,fname:"George",lname:"Watson",company:"Watson & Son",address1:"1143 Carver Place",city:"Mountain View",state:"CA",zipcode:"94063",phone:"415-389-8789"}
+{customer_num:107,fname:"Charles",lname:"Ream",company:"Athletic Supplies",address1:"41 Jordan Avenue",city:"Palo Alto",state:"CA",zipcode:"94304",phone:"415-356-9876"}
+{customer_num:108,fname:"Donald",lname:"Quinn",company:"Quinn's Sports",address1:"587 Alvarado",city:"Redwood City",state:"CA",zipcode:"94063",phone:"415-544-8729"}
+{customer_num:109,fname:"Jane",lname:"Miller",company:"Sport Stuff",address1:"Mayfair Mart",address2:"7345 Ross Blvd.",city:"Sunnyvale",state:"CA",zipcode:"94086",phone:"408-723-8789"}
+{customer_num:110,fname:"Roy",lname:"Jaeger",company:"AA Athletics",address1:"520 Topaz Way",city:"Redwood City",state:"CA",zipcode:"94062",phone:"415-743-3611"}
+{customer_num:111,fname:"Frances",lname:"Keyes",company:"Sports Center",address1:"3199 Sterling Court",city:"Sunnyvale",state:"CA",zipcode:"94085",phone:"408-277-7245"}
+{customer_num:112,fname:"Margaret",lname:"Lawson",company:"Runners & Others",address1:"234 Wyandotte Way",city:"Los Altos",state:"CA",zipcode:"94022",phone:"415-887-7235"}
+{customer_num:113,fname:"Lana",lname:"Beatty",company:"Sportstown",address1:"654 Oak Grove",city:"Menlo Park",state:"CA",zipcode:"94025",phone:"415-356-9982"}
+{customer_num:114,fname:"Frank",lname:"Albertson",company:"Sporting Place",address1:"947 Waverly Place",city:"Redwood City",state:"CA",zipcode:"94062",phone:"415-886-6677"}
+{customer_num:115,fname:"Alfred",lname:"Grant",company:"Gold Medal Sports",address1:"776 Gary Avenue",city:"Menlo Park",state:"CA",zipcode:"94025",phone:"415-356-1123"}
+{customer_num:116,fname:"Jean",lname:"Parmelee",company:"Olympic City",address1:"1104 Spinosa Drive",city:"Mountain View",state:"CA",zipcode:"94040",phone:"415-534-8822"}
+{customer_num:117,fname:"Arnold",lname:"Sipes",company:"Kids Korner",address1:"850 Lytton Court",city:"Redwood City",state:"CA",zipcode:"94063",phone:"415-245-4578"}
+{customer_num:118,fname:"Dick",lname:"Baxter",company:"Blue Ribbon Sports",address1:"5427 College",city:"Oakland",state:"CA",zipcode:"94609",phone:"415-655-0011"}
+{customer_num:119,fname:"Bob",lname:"Shorter",company:"The Triathletes Club",address1:"2405 Kings Highway",city:"Cherry Hill",state:"NJ",zipcode:"08002",phone:"609-663-6079"}
+{customer_num:120,fname:"Fred",lname:"Jewell",company:"Century Pro Shop",address1:"6627 N. 17th Way",city:"Phoenix",state:"AZ",zipcode:"85016",phone:"602-265-8754"}
+{customer_num:121,fname:"Jason",lname:"Wallack",company:"City Sports",address1:"Lake Biltmore Mall",address2:"350 W. 23rd Street",city:"Wilmington",state:"DE",zipcode:"19898",phone:"302-366-7511"}
+{customer_num:122,fname:"Cathy",lname:"O'Brian",company:"The Sporting Life",address1:"543 Nassau Street",city:"Princeton",state:"NJ",zipcode:"08540",phone:"609-342-0054"}
+{customer_num:123,fname:"Marvin",lname:"Hanlon",company:"Bay Sports",address1:"10100 Bay Meadows Ro",address2:"Suite 1020",city:"Jacksonville",state:"FL",zipcode:"32256",phone:"904-823-4239"}
+{customer_num:124,fname:"Chris",lname:"Putnum",company:"Putnum's Putters",address1:"4715 S.E. Adams Blvd",address2:"Suite 909C",city:"Bartlesville",state:"OK",zipcode:"74006",phone:"918-355-2074"}
+{customer_num:125,fname:"James",lname:"Henry",company:"Total Fitness Sports",address1:"1450 Commonwealth Av",city:"Brighton",state:"MA",zipcode:"02135",phone:"617-232-4159"}
+{customer_num:126,fname:"Eileen",lname:"Neelie",company:"Neelie's Discount Sp",address1:"2539 South Utica Str",city:"Denver",state:"CO",zipcode:"80219",phone:"303-936-7731"}
+{customer_num:127,fname:"Kim",lname:"Satifer",company:"Big Blue Bike Shop",address1:"Blue Island Square",address2:"12222 Gregory Street",city:"Blue Island",state:"NY",zipcode:"60406",phone:"312-944-5691"}
+{customer_num:128,fname:"Frank",lname:"Lessor",company:"Phoenix University",address1:"Athletic Department",address2:"1817 N. Thomas Road",city:"Phoenix",state:"AZ",zipcode:"85008",phone:"602-533-1817"}

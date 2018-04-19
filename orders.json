@@ -1,0 +1,23 @@
+{order_num:1001,order_date:"05/20/2008",customer_num:104,ship_instruct:"express",backlog:"n",po_num:"B77836",ship_date:"06/01/2008",ship_weight:20.40,ship_charge:"$10.00",paid_date:"07/22/2008"}
+{order_num:1002,order_date:"05/21/2008",customer_num:101,ship_instruct:"PO on box; deliver to back door only",backlog:"n",po_num:"9270",ship_date:"05/26/2008",ship_weight:50.60,ship_charge:"$15.30",paid_date:"06/03/2008"}
+{order_num:1003,order_date:"05/22/2008",customer_num:104,ship_instruct:"express",backlog:"n",po_num:"B77890",ship_date:"05/23/2008",ship_weight:35.60,ship_charge:"$10.80",paid_date:"06/14/2008"}
+{order_num:1004,order_date:"05/22/2008",customer_num:106,ship_instruct:"ring bell twice",backlog:"y",po_num:"8006",ship_date:"05/30/2008",ship_weight:95.80,ship_charge:"$19.20"}
+{order_num:1005,order_date:"05/24/2008",customer_num:116,ship_instruct:"call before delivery",backlog:"n",po_num:"2865",ship_date:"06/09/2008",ship_weight:80.80,ship_charge:"$16.20",paid_date:"06/21/2008"}
+{order_num:1006,order_date:"05/30/2008",customer_num:112,ship_instruct:"after 10 am",backlog:"y",po_num:"Q13557",ship_weight:70.80,ship_charge:"$14.20"}
+{order_num:1007,order_date:"05/31/2008",customer_num:117,backlog:"n",po_num:"278693",ship_date:"06/05/2008",ship_weight:125.90,ship_charge:"$25.20"}
+{order_num:1008,order_date:"06/07/2008",customer_num:110,ship_instruct:"closed Monday",backlog:"y",po_num:"LZ230",ship_date:"07/06/2008",ship_weight:45.60,ship_charge:"$13.80",paid_date:"07/21/2008"}
+{order_num:1009,order_date:"06/14/2008",customer_num:111,ship_instruct:"next door to grocery",backlog:"n",po_num:"4745",ship_date:"06/21/2008",ship_weight:20.40,ship_charge:"$10.00",paid_date:"08/21/2008"}
+{order_num:1010,order_date:"06/17/2008",customer_num:115,ship_instruct:"deliver 776 King St. if no answer",backlog:"n",po_num:"429Q",ship_date:"06/29/2008",ship_weight:40.60,ship_charge:"$12.30",paid_date:"08/22/2008"}
+{order_num:1011,order_date:"06/18/2008",customer_num:104,ship_instruct:"express",backlog:"n",po_num:"B77897",ship_date:"07/03/2008",ship_weight:10.40,ship_charge:"$5.00",paid_date:"08/29/2008"}
+{order_num:1012,order_date:"06/18/2008",customer_num:117,backlog:"n",po_num:"278701",ship_date:"06/29/2008",ship_weight:70.80,ship_charge:"$14.20"}
+{order_num:1013,order_date:"06/22/2008",customer_num:104,ship_instruct:"express",backlog:"n",po_num:"B77930",ship_date:"07/10/2008",ship_weight:60.80,ship_charge:"$12.20",paid_date:"07/31/2008"}
+{order_num:1014,order_date:"06/25/2008",customer_num:106,ship_instruct:"ring bell, kick door loudly",backlog:"n",po_num:"8052",ship_date:"07/03/2008",ship_weight:40.60,ship_charge:"$12.30",paid_date:"07/10/2008"}
+{order_num:1015,order_date:"06/27/2008",customer_num:110,ship_instruct:"closed Mondays",backlog:"n",po_num:"MA003",ship_date:"07/16/2008",ship_weight:20.60,ship_charge:"$6.30",paid_date:"08/31/2008"}
+{order_num:1016,order_date:"06/29/2008",customer_num:119,ship_instruct:"delivery entrance off Camp St.",backlog:"n",po_num:"PC6782",ship_date:"07/12/2008",ship_weight:35.00,ship_charge:"$11.80"}
+{order_num:1017,order_date:"07/09/2008",customer_num:120,ship_instruct:"North side of clubhouse",backlog:"n",po_num:"DM354331",ship_date:"07/13/2008",ship_weight:60.00,ship_charge:"$18.00"}
+{order_num:1018,order_date:"07/10/2008",customer_num:121,ship_instruct:"SW corner of Biltmore Mall",backlog:"n",po_num:"S22942",ship_date:"07/13/2008",ship_weight:70.50,ship_charge:"$20.00",paid_date:"08/06/2008"}
+{order_num:1019,order_date:"07/11/2008",customer_num:122,ship_instruct:"closed til noon Mondays",backlog:"n",po_num:"Z55709",ship_date:"07/16/2008",ship_weight:90.00,ship_charge:"$23.00",paid_date:"08/06/2008"}
+{order_num:1020,order_date:"07/11/2008",customer_num:123,ship_instruct:"express",backlog:"n",po_num:"W2286",ship_date:"07/16/2008",ship_weight:14.00,ship_charge:"$8.50",paid_date:"09/20/2008"}
+{order_num:1021,order_date:"07/23/2008",customer_num:124,ship_instruct:"ask for Elaine",backlog:"n",po_num:"C3288",ship_date:"07/25/2008",ship_weight:40.00,ship_charge:"$12.00",paid_date:"08/22/2008"}
+{order_num:1022,order_date:"07/24/2008",customer_num:126,ship_instruct:"express",backlog:"n",po_num:"W9925",ship_date:"07/30/2008",ship_weight:15.00,ship_charge:"$13.00",paid_date:"09/02/2008"}
+{order_num:1023,order_date:"07/24/2008",customer_num:127,ship_instruct:"no deliveries after 3 p.m.",backlog:"n",po_num:"KF2961",ship_date:"07/30/2008",ship_weight:60.00,ship_charge:"$18.00",paid_date:"08/22/2008"}
