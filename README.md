@@ -46,7 +46,7 @@ mongoimport --db stores_demo --collection orders < orders.json
 3. cust_calls : dont user_id like ‘%j’
 4. orders : le 1e enregistrement en triant par order_date (par ordre croissant)
 
-```
+```sql
 db.customer.find( {customer_num: { $gt:101 } } )
 db.orders.find( {order_num: { $gte:1003, $lte:1006 } } )
 db.cust_calls.find({"user_id": /j$/})
