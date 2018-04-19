@@ -11,3 +11,7 @@ mongo database --eval 'db.customer.createIndex({ "customer_num": 1 })' >> td3-NO
 mongo database --eval 'db.customer.createIndex({ "customer_num": 1, "call_dtime": 1, "user_id": 1 })' >> td3-NOM-PRENOM.log
 mongo database --eval 'db.customer.explain().find({customer_num: {$gt: 101}})' >> td3-NOM-PRENOM.log
 mongo database --eval 'db.cust_calls.explain().find({user_id: /j$/})' >> td3-NOM-PRENOM.log
+
+mongo database --eval 'db.cust_calls.deleteMany({customer_num: 121})' >> td3-NOM-PRENOM.log
+mongo database --eval 'db.cust_calls.count()' >> td3-NOM-PRENOM.log
+mongo database --eval 'db.customer.update({customer_num: 101}, {$set: { "fname": "Laurent" , "lname": "Revel"}})' >> td3-NOM-PRENOM.log
