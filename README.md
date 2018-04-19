@@ -36,7 +36,7 @@ mongoimport --db stores_demo --collection orders < orders.json
 
 ```
 db.customer.find( {customer_num: { $gt:101 } } )
-db.orders.find( {order_num: { $gt:1003, $lt:1006 } } )
+db.orders.find( {order_num: { $gte:1003, $lte:1006 } } )
 db.cust_calls.find({"user_id": /j$/})
 db.orders.find().sort({order_date:+1}).limit(1)
 ```
