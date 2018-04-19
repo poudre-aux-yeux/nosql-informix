@@ -59,5 +59,5 @@ db.orders.find().sort({order_date:+1}).limit(1)
 ```sql
 db.cust_calls.deleteMany({customer_num: '121'])
 db.cust_calls.count()
-db.customer.update({customer_num: '121'}, {$set: { "fname": "Laurent" }, {"lname": "Revel"}})
+db.customer.update({customer_num: '101'}, {$set: { "fname": "Laurent" }, {"lname": "Revel"}})
 ```
