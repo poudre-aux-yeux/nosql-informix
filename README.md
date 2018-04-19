@@ -50,6 +50,13 @@ db.orders.find().sort({order_date:+1}).limit(1)
 
 ### Question 3 : Création de deux index (customer, cust_call) dans Mongodb
 
+```sql
+db.customer.createIndex({ "customer_num": 1 })
+db.customer.createIndex({ "customer_num": 1, "call_dtime": 1, "user_id": 1 })
+db.customer.explain().find({customer_num: {$gt: 101}})
+db.cust_calls.explain().find({user_id: /j$/})
+```
+
 ### Question 4 : Migration SQL vers Mongodb. Convertir en commande MONGODB les instructions SQL suivantes
 
 - DELETE FROM CUST_CALLS WHERE customer_num = 121; 
