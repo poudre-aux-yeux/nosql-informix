@@ -41,6 +41,11 @@ mongoimport --db stores_demo --collection orders < orders.json
 
 ### Question 2 : Recherche les enregistrements des collections (customer, orders, cust_call) dans Mongodb
 
+1. customer : dont customer_num > 101
+2. orders : dont order_num between 1003 and 1006
+3. cust_calls : dont user_id like ‘%j’
+4. orders : le 1e enregistrement en triant par order_date (par ordre croissant)
+
 ```
 db.customer.find( {customer_num: { $gt:101 } } )
 db.orders.find( {order_num: { $gte:1003, $lte:1006 } } )
@@ -49,6 +54,10 @@ db.orders.find().sort({order_date:+1}).limit(1)
 ```
 
 ### Question 3 : Création de deux index (customer, cust_call) dans Mongodb
+
+1. Unique sur la colonne : customer_num de la collection customer
+2. Unique sur les colonnes : customer_num + call_dtime + user_id de la collection cust_calls
+3. Vérifier que votre index est bien utilisé dans l’instruction 2a puis 2c
 
 ```sql
 db.customer.createIndex({ "customer_num": 1 })
@@ -59,9 +68,9 @@ db.cust_calls.explain().find({user_id: /j$/})
 
 ### Question 4 : Migration SQL vers Mongodb. Convertir en commande MONGODB les instructions SQL suivantes
 
-- DELETE FROM CUST_CALLS WHERE customer_num = 121; 
-- SELECT COUNT(*) FROM CUST_CALLS;
-- UPDATE FROM CUSTOMER SET FNAME = "Laurent" AND LNAME = "Revel" WHERE CUSTOMER_NUM = 101;
+1. DELETE FROM CUST_CALLS WHERE customer_num = 121; 
+2. SELECT COUNT(*) FROM CUST_CALLS;
+3. UPDATE FROM CUSTOMER SET FNAME = "Laurent" AND LNAME = "Revel" WHERE CUSTOMER_NUM = 101;
 
 ```sql
 db.cust_calls.deleteMany({customer_num: 121})
