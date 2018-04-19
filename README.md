@@ -28,6 +28,8 @@ gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc
 - Importer le repo Git : `git clone https://github.com/poudre-aux-yeux/nosql-informix`
 - `cd nosql-informix`
 
+---
+
 ### Question 1
 
 - Lancer les commandes suivantes :
@@ -37,7 +39,18 @@ mongoimport --db stores_demo --collection cust_calls < cust_calls.json
 mongoimport --db stores_demo --collection orders < orders.json
 ```
 
-### Question 4 
+### Question 2 : Recherche les enregistrements des collections (customer, orders, cust_call) dans Mongodb
+
+```
+db.customer.find( {customer_num: { $gt:101 } } )
+db.orders.find( {order_num: { $gte:1003, $lte:1006 } } )
+db.cust_calls.find({"user_id": /j$/})
+db.orders.find().sort({order_date:+1}).limit(1)
+```
+
+### Question 3 : Création de deux index (customer, cust_call) dans Mongodb
+
+### Question 4 : Migration SQL vers Mongodb. Convertir en commande MONGODB les instructions SQL suivantes
 
 - DELETE FROM CUST_CALLS WHERE customer_num = 121  
 ```
@@ -50,4 +63,3 @@ db.cust_calls.count()
 - UPDATE FROM CUSTOMER SET FNAME = « Laurent » AND LNAME = « Revel » WHERE CUSTOMER_NUM = 101  
 ```
 db.customer.update({customer_num: '121'}, {$set: { "fname": "Laurent" }, "lname": {"Revel"}})
-```
