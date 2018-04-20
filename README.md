@@ -2,8 +2,9 @@
 
 ## Informix
 
-- Lancer la BDD : `su - informix`
+- Changer l'utilisateur à informix : `su - informix`
 - Voir si informix est online : `onstat -`
+- Démarrer informix : `oninit -y`
 - Changer la variable locale : `DB_LOCALE=en_us.8859-1`
 - Créer la BDD démo : `dbaccessdemo7`
 #- Nom de la BDD : `dbschema –d stores_demo –t customer -ss`
