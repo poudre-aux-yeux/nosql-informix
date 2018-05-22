@@ -93,13 +93,34 @@ db.customer.update({customer_num: 101}, {$set: { "fname": "Laurent" , "lname": "
 
 ### Question 1
 
-1. SELECT * FROM customer WHERE company MATCHES "*Sports*"and NOT MATCHES "town*"
-2. SELECT * FROM cust_calls WHERE call_descr MATCHES "*hero watch*"or MATCHES "tennis*"
+Convertir les instructions SQL Informix suivantes, en instruction find MongoDB
+
+1. SELECT * FROM customer WHERE company MATCHES "\*Sports*" AND NOT MATCHES "\*town*"
+2. SELECT * FROM cust_calls WHERE call_descr MATCHES "\*hero watch*" OR MATCHES "\*tennis*"
+
+```sql
+db.customer.find({ "company": { $search: "Sports"} })
+db.cust_calls/find({  })
+```
+
+### Question 2
+
+Corriger les instructions MongoDB suivantes afin qu’elles fonctionnent sur les collections : __CUSTOMER__ et __ORDERS__ afin de récupérer les documents dont les champs sont null ou vide
+
+1. db.customer.find({ "company": { $search: "Sports"} })
+2. db.orders.find (( pai_date: ( $type = 11 )))
 
 ```sql
 
 ```
 
-### Question 2
-
 ### Question 3
+
+Corriger les instructions suivantes afin qu’elles retournent seulement les champs __\_id , fname et lname__ dans la collection __CUSTOMER__ (ces requêtes retournent chacune un document)
+
+1. db.customer.find ( ( state :’CA’, fname:’Arnold’))
+2. db.customer.find ( ( zipcod :’85008’))
+
+```sql
+
+```
