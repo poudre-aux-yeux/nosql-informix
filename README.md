@@ -91,9 +91,7 @@ db.customer.update({customer_num: 101}, {$set: { "fname": "Laurent" , "lname": "
 
 ## TD 4
 
-### Question 1
-
-Convertir les instructions SQL Informix suivantes, en instruction find MongoDB
+### Question 1 : Convertir les instructions SQL Informix suivantes, en instruction find MongoDB
 
 1. SELECT * FROM customer WHERE company MATCHES "\*Sports*" AND NOT MATCHES "\*town*"
 2. SELECT * FROM cust_calls WHERE call_descr MATCHES "\*hero watch*" OR MATCHES "\*tennis*"
@@ -106,9 +104,7 @@ db.cust_calls.createIndex( { call_descr: "text" } )
 db.cust_calls.find({ $text: { $search: "hero watch tennis"} })
 ```
 
-### Question 2
-
-Corriger les instructions MongoDB suivantes afin qu’elles fonctionnent sur les collections : __CUSTOMER__ et __ORDERS__ afin de récupérer les documents dont les champs sont null ou vide
+### Question 2 : Corriger les instructions MongoDB suivantes afin qu’elles fonctionnent sur les collections : __CUSTOMER__ et __ORDERS__ afin de récupérer les documents dont les champs sont null ou vide
 
 1. db.customer.find ( (address2 = nul ) )
 2. db.orders.find (( pai_date: ( $type = 11 )))
@@ -121,9 +117,7 @@ db.orders.find ({ paid_date: { $type = 11 } })
 
 ```
 
-### Question 3
-
-Corriger les instructions suivantes afin qu’elles retournent seulement les champs __\_id , fname et lname__ dans la collection __CUSTOMER__ (ces requêtes retournent chacune un document)
+### Question 3 : Corriger les instructions suivantes afin qu’elles retournent seulement les champs __\_id , fname et lname__ dans la collection __CUSTOMER__ (ces requêtes retournent chacune un document)
 
 1. db.customer.find (( state :'CA', fname:'Arnold'))
 2. db.customer.find (( zipcod :'85008'))
