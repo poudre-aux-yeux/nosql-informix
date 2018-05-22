@@ -111,10 +111,9 @@ db.cust_calls.find({ $text: { $search: "hero watch tennis"} })
 
 ```sql
 db.customer.find ({ address2: null })
-db.orders.find ({ paid_date: { $type = 11 } })
-  ( paid_date: ( $type = 11 )))
-
-
+db.orders.find ({ paid_date: { $type: 10 } }, { paid_date: { $exists: false } })
+db.orders.find ({ paid_date: { $exists: false } })
+db.orders.find ({ paid_date: { $type: 10 } })
 ```
 
 ### Question 3 : Corriger les instructions suivantes afin qu’elles retournent seulement les champs __\_id , fname et lname__ dans la collection __CUSTOMER__ (ces requêtes retournent chacune un document)
@@ -123,6 +122,6 @@ db.orders.find ({ paid_date: { $type = 11 } })
 2. db.customer.find (( zipcod :'85008'))
 
 ```sql
-db.customer.find ({ state :'CA', fname:'Arnold' })
-db.customer.find ({ zipcod :'85008' })
+db.customer.find ({ state :'CA', fname:'Arnold' }, { _id: 1, frame: 1, lname: 1 })
+# db.customer.find ({ zipcod :'85008' })
 ```
