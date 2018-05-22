@@ -29,6 +29,12 @@ gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc
 - Importer le repo Git : `git clone https://github.com/poudre-aux-yeux/nosql-informix`
 - `cd nosql-informix`
 
+### Commandes MongoDB
+
+- `show dbs` affiche les différentes bases de données
+- `use MyDatabase` permet de se connecter à la base de données __MyDatabase__
+- `show collections` permet d'afficher les différents tables de la BDD
+
 ---
 
 ### Question 1
