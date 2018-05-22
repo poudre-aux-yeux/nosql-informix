@@ -43,9 +43,9 @@ gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc
 
 - Lancer les commandes suivantes :
 ```sh
-mongoimport --db stores_demo --collection customer < customer.json
-mongoimport --db stores_demo --collection cust_calls < cust_calls.json
-mongoimport --db stores_demo --collection orders < orders.json
+mongoimport --db stores_demo --collection customer < informix-tables/customer.json
+mongoimport --db stores_demo --collection cust_calls < informix-tables/cust_calls.json
+mongoimport --db stores_demo --collection orders < informix-tables/orders.json
 ```
 
 ### Question 2 : Recherche les enregistrements des collections (customer, orders, cust_call) dans Mongodb
