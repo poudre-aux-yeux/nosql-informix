@@ -37,6 +37,8 @@ gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc
 
 ---
 
+## TD 3
+
 ### Question 1
 
 - Lancer les commandes suivantes :
@@ -84,3 +86,20 @@ db.cust_calls.deleteMany({customer_num: 121})
 db.cust_calls.count()
 db.customer.update({customer_num: 101}, {$set: { "fname": "Laurent" , "lname": "Revel"}})
 ```
+
+---
+
+## TD 4
+
+### Question 1
+
+1. SELECT * FROM customer WHERE company MATCHES "*Sports*"and NOT MATCHES "town*"
+2. SELECT * FROM cust_calls WHERE call_descr MATCHES "*hero watch*"or MATCHES "tennis*"
+
+```sql
+
+```
+
+### Question 2
+
+### Question 3
