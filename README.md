@@ -99,18 +99,25 @@ Convertir les instructions SQL Informix suivantes, en instruction find MongoDB
 2. SELECT * FROM cust_calls WHERE call_descr MATCHES "\*hero watch*" OR MATCHES "\*tennis*"
 
 ```sql
-db.customer.find({ "company": { $search: "Sports"} })
-db.cust_calls/find({  })
+db.customer.createIndex( { company: "text" } )
+db.customer.find({ $text: { $search: "Sports -town"} })
+
+db.cust_calls.createIndex( { call_descr: "text" } )
+db.cust_calls.find({ $text: { $search: "hero watch tennis"} })
 ```
 
 ### Question 2
 
 Corriger les instructions MongoDB suivantes afin qu’elles fonctionnent sur les collections : __CUSTOMER__ et __ORDERS__ afin de récupérer les documents dont les champs sont null ou vide
 
-1. db.customer.find({ "company": { $search: "Sports"} })
+1. db.customer.find ( (address2 = nul ) )
 2. db.orders.find (( pai_date: ( $type = 11 )))
 
 ```sql
+db.customer.find ({ address2: null })
+db.orders.find ({ paid_date: { $type = 11 } })
+  ( paid_date: ( $type = 11 )))
+
 
 ```
 
@@ -118,9 +125,10 @@ Corriger les instructions MongoDB suivantes afin qu’elles fonctionnent sur les
 
 Corriger les instructions suivantes afin qu’elles retournent seulement les champs __\_id , fname et lname__ dans la collection __CUSTOMER__ (ces requêtes retournent chacune un document)
 
-1. db.customer.find ( ( state :’CA’, fname:’Arnold’))
-2. db.customer.find ( ( zipcod :’85008’))
+1. db.customer.find (( state :'CA', fname:'Arnold'))
+2. db.customer.find (( zipcod :'85008'))
 
 ```sql
-
+db.customer.find ({ state :'CA', fname:'Arnold' })
+db.customer.find ({ zipcod :'85008' })
 ```
