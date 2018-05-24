@@ -114,6 +114,9 @@ db.customer.find ({ address2: null })
 db.orders.find ({ paid_date: { $type: 10 } }, { paid_date: { $exists: false } })
 db.orders.find ({ paid_date: { $exists: false } })
 db.orders.find ({ paid_date: { $type: 10 } })
+
+# 2.2
+db.orders.find( { $or: [ { paid_date : { $type: 11 }}, { paid_date: null }, { paid_date: { $exists: false } } ] } )
 ```
 
 ### Question 3 : Corriger les instructions suivantes afin qu’elles retournent seulement les champs __\_id , fname et lname__ dans la collection __CUSTOMER__ (ces requêtes retournent chacune un document)
@@ -124,4 +127,10 @@ db.orders.find ({ paid_date: { $type: 10 } })
 ```sql
 db.customer.find ({ state :'CA', fname:'Arnold' }, { _id: 1, frame: 1, lname: 1 })
 # db.customer.find ({ zipcod :'85008' })
+
+# 3.1
+db.customer.find( { state: "CA", fname: "Arnold" }, {fname: 1, lname: 1} )
+
+#3.2
+db.customer.find( { zipcode: "85008"}, {fname: 1, lname: 1} )
 ```
